@@ -10,6 +10,14 @@ function formatTelefone(value) {
     .replace(/(-\d{4})\d+?$/, "$1");
 }
 
+// Função para gerar um id único
+function generateUniqueId() {
+  return (  
+    Math.random().toString(36).substr(2, 9) +
+    Date.now().toString(36)
+  ).toUpperCase();
+}
+
 // Função para formatar CPF ou CNPJ
 function formatDocumento(value) {
   const numbers = value.replace(/\D/g, "");
@@ -48,6 +56,7 @@ export default function FormularioGoogleSheets() {
   const [numero, setNumero] = useState("");
   const [bairro, setBairro] = useState("");
   const [cidade, setCidade] = useState("");
+  const [estado, setEstado] = useState("");
   const [complemento, setComplemento] = useState("");
   const [observacao, setObservacao] = useState("");
   const [mensagem, setMensagem] = useState("");
@@ -66,8 +75,11 @@ export default function FormularioGoogleSheets() {
       numero: numero,
       bairro: bairro,
       cidade: cidade,
+      estado: estado,
       complemento: complemento,
       observacao: observacao,
+      id: generateUniqueId(), // Gerar um ID único para cada submissão
+      data: new Date().toISOString(), // Adicionar data de submissão
     };
 
     try {
@@ -93,6 +105,7 @@ export default function FormularioGoogleSheets() {
         setNumero("");
         setBairro("");
         setCidade("");
+        setEstado("");
         setComplemento("");
         setObservacao("");
       } else {
@@ -164,6 +177,13 @@ export default function FormularioGoogleSheets() {
         placeholder="Cidade"
         value={cidade}
         onChange={(e) => setCidade(e.target.value)}
+        required
+      />
+      <input
+        type="text"
+        placeholder="Estado (UF)"
+        value={estado}
+        onChange={(e) => setEstado(e.target.value)}
         required
       />
       <input
