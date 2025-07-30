@@ -1,14 +1,12 @@
-import FormularioGoogleSheets from './components/forms/formCep.jsx';
-import Logo from './components/logo/Logo.jsx';
+import AppRoutes from './routes';
 import './styles/app.css';
 
 function App() {
 
   return (
-    < div className="App">
-      <Logo />
-      <FormularioGoogleSheets />
-    </div>
+    <>
+      <AppRoutes />
+    </>
   )
 }
 
