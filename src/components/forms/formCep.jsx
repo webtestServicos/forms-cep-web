@@ -119,7 +119,7 @@ export default function FormularioGoogleSheets() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form-cep">
       <input
         type="text"
         placeholder="Nome"

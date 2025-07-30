@@ -1,6 +1,5 @@
-form {
+.form-cep {
   width:600px;
-  margin: 40px auto;
   padding: 32px 28px;
   background: #fff;
   border-radius: 18px;
@@ -10,7 +9,7 @@ form {
   gap: 18px;
 }
 
-input,
+.form-cep input,
 textarea {
   padding: 12px 14px;
   border: 1.5px solid #e0e0e0;
@@ -22,14 +21,14 @@ textarea {
   resize: none;
 }
 
-input:focus,
-textarea:focus {
+.form-cep input:focus,
+.form-cep textarea:focus {
   border-color: #263B28;
   box-shadow: 0 0 0 2px #e3f0ff;
   background: #fff;
 }
 
-button[type="submit"] {
+.form-cep button[type="submit"] {
   padding: 12px 0;
   background: linear-gradient(90deg, #456b49 0%, #8B924F 100%);
   color: #fff;
@@ -42,12 +41,12 @@ button[type="submit"] {
   box-shadow: 0 2px 8px rgba(79,140,255,0.08);
 }
 
-button[type="submit"]:hover {
+.form-cep button[type="submit"]:hover {
   background: linear-gradient(90deg, #263B28 0%, #8B924F 100%);
   transform: translateY(-2px) scale(1.02);
 }
 
-p {
+.form-cep p {
   margin: 0;
   padding: 10px 0 0 0;
   color: #38c172;
@@ -57,7 +56,7 @@ p {
 }
 
 @media (max-width: 425px) {
-  form {
+  .form-cep {
     min-width: 325px;
     width: 95%;
     padding: 18px 8px;

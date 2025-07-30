@@ -44,7 +44,7 @@ export default function QueryCustomer() {
     };
 
     return (
-        <div>
+        <div className="query-customer">
             <h1>Consulta de Clientes</h1>
             <p>Esta página permitirá que você consulte os clientes cadastrados.</p>
             <form className="search-customer" onSubmit={handleSearch}>

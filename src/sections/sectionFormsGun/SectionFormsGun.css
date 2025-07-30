@@ -1,0 +1,102 @@
+.section-forms-gun {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #f7fafd;
+  padding: 40px 0;
+}
+
+.section-forms-gun form {
+  width: 100%;
+  max-width: 520px;
+  padding: 32px 28px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(45,58,75,0.10), 0 1.5px 6px rgba(45,58,75,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.section-forms-gun h1 {
+  text-align: center;
+  color: #263B28;
+  margin-bottom: 6px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.section-forms-gun p {
+  text-align: center;
+  color: #6b7a90;
+  font-size: 1.08rem;
+  margin-bottom: 12px;
+}
+
+.section-forms-gun label {
+  display: flex;
+  flex-direction: column;
+  color: #2d3a4b;
+  font-weight: 500;
+  font-size: 1rem;
+  gap: 6px;
+}
+
+.section-forms-gun input,
+.section-forms-gun textarea,
+.section-forms-gun select {
+  padding: 12px 14px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f8f9fa;
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+  resize: none;
+}
+
+.section-forms-gun input:focus,
+.section-forms-gun textarea:focus,
+.section-forms-gun select:focus {
+  border-color: #456b49;
+  box-shadow: 0 0 0 2px #e3f0ff;
+  background: #fff;
+}
+
+.section-forms-gun textarea {
+  min-height: 80px;
+  max-height: 180px;
+}
+
+.section-forms-gun select {
+  cursor: pointer;
+  background: #f8f9fa;
+}
+
+.section-forms-gun button[type="submit"] {
+  padding: 12px 0;
+  background: linear-gradient(90deg, #456b49 0%, #8B924F 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+  margin-top: 8px;
+}
+
+.section-forms-gun button[type="submit"]:hover {
+  background: linear-gradient(90deg, #263B28 0%, #8B924F 100%);
+  transform: translateY(-2px) scale(1.02);
+}
+
+@media (max-width: 600px) {
+  .section-forms-gun form {
+    max-width: 98vw;
+    padding: 18px 6px;
+  }
+}
