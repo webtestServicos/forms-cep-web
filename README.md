@@ -1,12 +1,5 @@
-# React + Vite
+# FORMULÁRIO DE CADASTRO DE ENDERÇO DE CLIENTES
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto tem o objetivo de estar ajudando os nossos vendedores a estarem poupando tempo e estarem cada vez mais dedicado a vendas. O projeto ele consiste em colectar os dadods dos clientes e salvar em uma planilha automátimente para que deppois possamos a estar fazendo o seu faturamento e assim poupamos o tempo de coletar e envio para um setor ao outro, pois sabemos que na linha da frente, no setor de vendas a inumeras mensagens e que não pode se perder o foco. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Portanto eu creie esse projeto com o objetivo de estar auxiliando o desempenho de vossos colaboradores
