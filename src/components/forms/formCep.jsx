@@ -119,86 +119,89 @@ export default function FormularioGoogleSheets() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form-cep">
-      <input
-        type="text"
-        placeholder="Nome"
-        value={nome}
-        onChange={(e) => setNome(e.target.value)}
-        required
-      />
-      <input
-        type="text"
-        placeholder="Telefone"
-        value={telefone}
-        maxLength={15}
-        onChange={(e) => setTelefone(formatTelefone(e.target.value))}
-        required
-      />
-      <input
-        type="text"
-        placeholder="Documento (CPF ou CNPJ)"
-        value={documento}
-        maxLength={18}
-        onChange={(e) => setDocumento(formatDocumento(e.target.value))}
-        required
-      />
-      <input
-        type="text"
-        placeholder="CEP"
-        value={cep}
-        maxLength={9}
-        onChange={(e) => setCep(formatCep(e.target.value))}
-        required
-      />
-      <input
-        type="text"
-        placeholder="Logradouro (rua, avenida, etc.)"
-        value={logradouro}
-        onChange={(e) => setLogradouro(e.target.value)}
-        required
-      />
-      <input
-        type="number"
-        placeholder="Número"
-        value={numero}
-        onChange={(e) => setNumero(e.target.value)}
-        required
-      />
-      <input
-        type="text"
-        placeholder="Bairro"
-        value={bairro}
-        onChange={(e) => setBairro(e.target.value)}
-        required
-      />
-      <input
-        type="text"
-        placeholder="Cidade"
-        value={cidade}
-        onChange={(e) => setCidade(e.target.value)}
-        required
-      />
-      <input
-        type="text"
-        placeholder="Estado (UF)"
-        value={estado}
-        onChange={(e) => setEstado(e.target.value)}
-        required
-      />
-      <input
-        type="text"
-        placeholder="Complemento (opcional)"
-        value={complemento}
-        onChange={(e) => setComplemento(e.target.value)}
-      />
-      <textarea
-        placeholder="Observação (opcional)"
-        value={observacao}
-        onChange={(e) => setObservacao(e.target.value)}
-      />
-      <button type="submit">Enviar</button>
-      {mensagem && <p>{mensagem}</p>}
-    </form>
+    <div className="form-cep-container">
+      <form onSubmit={handleSubmit} className="form-cep">
+        <h2>Cadastro de Cliente</h2>
+        <input
+          type="text"
+          placeholder="Nome"
+          value={nome}
+          onChange={(e) => setNome(e.target.value)}
+          required
+        />
+        <input
+          type="text"
+          placeholder="Telefone"
+          value={telefone}
+          maxLength={15}
+          onChange={(e) => setTelefone(formatTelefone(e.target.value))}
+          required
+        />
+        <input
+          type="text"
+          placeholder="Documento (CPF ou CNPJ)"
+          value={documento}
+          maxLength={18}
+          onChange={(e) => setDocumento(formatDocumento(e.target.value))}
+          required
+        />
+        <input
+          type="text"
+          placeholder="CEP"
+          value={cep}
+          maxLength={9}
+          onChange={(e) => setCep(formatCep(e.target.value))}
+          required
+        />
+        <input
+          type="text"
+          placeholder="Logradouro (rua, avenida, etc.)"
+          value={logradouro}
+          onChange={(e) => setLogradouro(e.target.value)}
+          required
+        />
+        <input
+          type="number"
+          placeholder="Número"
+          value={numero}
+          onChange={(e) => setNumero(e.target.value)}
+          required
+        />
+        <input
+          type="text"
+          placeholder="Bairro"
+          value={bairro}
+          onChange={(e) => setBairro(e.target.value)}
+          required
+        />
+        <input
+          type="text"
+          placeholder="Cidade"
+          value={cidade}
+          onChange={(e) => setCidade(e.target.value)}
+          required
+        />
+        <input
+          type="text"
+          placeholder="Estado (UF)"
+          value={estado}
+          onChange={(e) => setEstado(e.target.value)}
+          required
+        />
+        <input
+          type="text"
+          placeholder="Complemento (opcional)"
+          value={complemento}
+          onChange={(e) => setComplemento(e.target.value)}
+        />
+        <textarea
+          placeholder="Observação (opcional)"
+          value={observacao}
+          onChange={(e) => setObservacao(e.target.value)}
+        />
+        <button type="submit">Enviar</button>
+        {mensagem && <p>{mensagem}</p>}
+      </form>
+    </div>
   );
 }

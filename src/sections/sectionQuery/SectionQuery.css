@@ -1,0 +1,7 @@
+.section-query {
+    display: flex;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #f7fafd;
+    padding: 40px 0;
+}

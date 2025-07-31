@@ -1,0 +1,161 @@
+.query-sale {
+  max-width: 1200px;
+  margin: 32px auto;
+  background: #f7fafd;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(45,58,75,0.10);
+  padding: 32px 24px;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.query-sale h1 {
+  text-align: center;
+  color: #1a2233;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.search-sale {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.search-sale select,
+.search-sale input[type="date"] {
+  padding: 10px 16px;
+  border: 1px solid #c3d0e6;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  color: #2d3a4b;
+  box-shadow: 0 1px 4px rgba(45,58,75,0.04);
+  outline: none;
+  transition: border 0.2s;
+}
+
+.search-sale button {
+  padding: 10px 20px;
+  background: #2d3a4b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(45,58,75,0.08);
+}
+
+.search-sale .clear-btn {
+  background: #fff;
+  color: #2d3a4b;
+  border: 1px solid #2d3a4b;
+}
+
+.search-sale button:hover {
+  background: #1a2233;
+}
+
+.dashboard {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.dashboard-card {
+  background: #e3eefd;
+  border-radius: 14px;
+  padding: 18px 28px;
+  min-width: 220px;
+  box-shadow: 0 2px 8px rgba(45,58,75,0.06);
+  text-align: center;
+}
+
+.dashboard-card h2 {
+  font-size: 1.1rem;
+  color: #2d3a4b;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.dashboard-card span {
+  font-size: 1.5rem;
+  color: #456b49;
+  font-weight: 700;
+}
+
+.dashboard-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.dashboard-card li {
+  font-size: 1rem;
+  color: #2d3a4b;
+  margin-bottom: 4px;
+}
+
+.sale-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(45,58,75,0.06);
+}
+
+.sale-table th, .sale-table td {
+  padding: 14px 10px;
+  text-align: left;
+}
+
+.sale-table th {
+  background: #2d3a4b;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  border-bottom: 2px solid #e3eefd;
+}
+
+.sale-table tr:nth-child(even) {
+  background: #f4f8fb;
+}
+
+.sale-table tr:hover {
+  background: #e3eefd;
+  transition: background 0.2s;
+}
+
+.loading {
+  text-align: center;
+  color: #456b49;
+  font-size: 1.2rem;
+}
+
+.error {
+  text-align: center;
+  color: #e74c3c;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+  .dashboard-card {
+    width: 100%;
+    min-width: unset;
+  }
+}
