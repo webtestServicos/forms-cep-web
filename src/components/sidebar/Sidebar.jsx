@@ -1,5 +1,5 @@
 import React from "react";
-import { Sidebar, Menu, MenuItem, Logo } from "react-mui-sidebar";
+import { Sidebar, Menu, MenuItem, Logo, Submenu } from "react-mui-sidebar";
 import "./Sidebar.css";
 
 const SidebarComponent = () => {
@@ -16,6 +16,9 @@ const SidebarComponent = () => {
         <MenuItem link="/consulta-venda">Histórico </MenuItem>
         <MenuItem link="/formulario">Cadastro de Clientes</MenuItem>
         <MenuItem link="/cadastrarVenda">Cadastro de Vendas</MenuItem>
+      </Menu>
+      <Menu subHeading="FATURAMENTO">
+        Sub
       </Menu>
     </Sidebar>
   );
