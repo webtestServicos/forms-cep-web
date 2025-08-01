@@ -159,3 +159,76 @@
     min-width: unset;
   }
 }
+
+/* ...existing code... */
+
+/* Responsividade para telas menores */
+@media (max-width: 700px) {
+  .query-sale {
+    padding: 16px 4px;
+  }
+
+  .search-sale {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .dashboard {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .dashboard-card {
+    padding: 14px 10px;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .sale-table th, .sale-table td {
+    padding: 8px 4px;
+    font-size: 0.95rem;
+  }
+
+  .sale-table {
+    font-size: 0.95rem;
+    overflow-x: auto;
+    display: block;
+  }
+}
+
+/* Quebra de tabela para mobile */
+@media (max-width: 500px) {
+  .sale-table, .sale-table thead, .sale-table tbody, .sale-table th, .sale-table td, .sale-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .sale-table thead {
+    display: none;
+  }
+
+  .sale-table tr {
+    margin-bottom: 16px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(45,58,75,0.04);
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  .sale-table td {
+    padding: 8px 6px;
+    border: none;
+    position: relative;
+    font-size: 0.95rem;
+  }
+
+  .sale-table td:before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: #2d3a4b;
+    display: block;
+    margin-bottom: 2px;
+  }
+}
+/* ...existing code... */

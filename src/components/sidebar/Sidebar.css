@@ -66,3 +66,50 @@
   color: #456b49;
   flex-shrink: 0;
 }
+
+/* ...existing code... */
+
+/* Responsividade para telas menores */
+@media (max-width: 700px) {
+  .sidebar-card {
+    min-height: unset;
+    flex-direction: row;
+    padding: 12px 0;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 2px 16px rgba(45,58,75,0.10);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  .sidebar-logo {
+    display: none;
+  }
+
+  .sidebar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .sidebar-list .sidebar-item {
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 4px;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+    border-radius: 0;
+    background: none;
+  }
+
+  .sidebar-list .sidebar-icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* ...existing code... */
