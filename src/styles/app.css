@@ -1,6 +1,6 @@
 .section-forms-address {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     min-height: 100vh;
     background: #f7fafd;
     padding: 0;

@@ -1,26 +1,48 @@
-import React from "react";
-import { Sidebar, Menu, MenuItem, Logo, Submenu } from "react-mui-sidebar";
-import "./Sidebar.css";
+import {
+  UserCircleIcon,
+  ClipboardDocumentListIcon,
+  PlusCircleIcon,
+  ShoppingCartIcon,
+} from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
+import './Sidebar.css';
 
 const SidebarComponent = () => {
   return (
-    <Sidebar width={"240px"}>
-      <Logo
-        img="/Banner-novo-Mobile-caca-e-pesca-agronutry.png"
-        className="logoImg"
-      >
-        Agronutry
-      </Logo>
-      <Menu subHeading="NAVEGAÇÃO">
-        <MenuItem link="/consulta">Consulta de Clientes</MenuItem>
-        <MenuItem link="/consulta-venda">Histórico </MenuItem>
-        <MenuItem link="/formulario">Cadastro de Clientes</MenuItem>
-        <MenuItem link="/cadastrarVenda">Cadastro de Vendas</MenuItem>
-      </Menu>
-      <Menu subHeading="FATURAMENTO">
-        Sub
-      </Menu>
-    </Sidebar>
+    <aside className="sidebar-card">
+      <div className="sidebar-logo">
+        <img
+          src="/Banner-novo-Mobile-caca-e-pesca-agronutry.png"
+          alt="Agronutry"
+        />
+      </div>
+      <nav className="sidebar-list">
+        <Link to="/consulta">
+          <div className="sidebar-item">
+            <UserCircleIcon className="sidebar-icon" />
+            Consulta de Clientes
+          </div>
+        </Link>
+        <Link to="/consulta-venda">
+          <div className="sidebar-item">
+            <ClipboardDocumentListIcon className="sidebar-icon" />
+            Histórico de Vendas
+          </div>
+        </Link>
+        <Link to="/formulario">
+          <div className="sidebar-item">
+            <PlusCircleIcon className="sidebar-icon" />
+            Cadastro de Clientes
+          </div>
+        </Link>
+        <Link to="/cadastrarVenda">
+          <div className="sidebar-item">
+            <ShoppingCartIcon className="sidebar-icon" />
+            Cadastro de Vendas
+          </div>
+        </Link>
+      </nav>
+    </aside>
   );
 };
 
