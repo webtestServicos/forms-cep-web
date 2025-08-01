@@ -1,6 +1,6 @@
 .section-query {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 15.625rem 2fr;
     min-height: 100vh;
     background: #f7fafd;
     padding: 0;
